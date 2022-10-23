@@ -1,12 +1,11 @@
 import Link from 'next/link'
 import { useState } from 'react'
 
-export function Header() {
+export function HeaderBlog() {
   const navigation = [
-    { name: 'Evidencias de Aprendizaje', href: '#evidencias' },
-    { name: 'Nosotros', href: '#nosotros' },
-    { name: 'Programa', href: '#programa' },
-    { name: 'Galería', href: '#galeria' }
+    { name: 'Kinder 1', href: '#evidencias' },
+    { name: 'Kinder 2', href: '#nosotros' },
+    { name: 'Kinder 3', href: '#programa' }
   ]
 
   const [listVisibility, setListVisibility] = useState('hidden')
@@ -48,24 +47,13 @@ export function Header() {
                 </a>
               </li>
             ))}
-            <li>
-              <Link href='/blog'>
-                <a className='px-3 py-2 transition hover:bg-yellow-100 rounded-xl truncate max-w-md'>
-                  Blog
-                </a>
-              </Link>
-            </li>
           </ul>
         </div>
 
         <a className='text-2xl font-semibold' href='#home'>
           Kinder Bambi
         </a>
-        <a
-          className='px-3 py-1 mx-auto font-semibold text-white border-0 rounded-xl bg-gradient-to-r from-yellow-400 to-orange-500'
-          href='#contacto'>
-          Contacto
-        </a>
+        <h1 className='font-semibold text-2xl'>Ingles - Semana 9</h1>
       </div>
       <div className='flex-row items-center hidden gap-4 px-6 py-4 justify-evenly lg:flex '>
         <a
@@ -73,6 +61,7 @@ export function Header() {
           href='#home'>
           Jardin de niños Bambi
         </a>
+        <h1 className='font-semibold text-xl'>Ingles - Semana 9</h1>
         <ul className='flex gap-6 text-md'>
           {navigation.map((item) => (
             <li key={item.name}>
@@ -83,19 +72,7 @@ export function Header() {
               </a>
             </li>
           ))}
-          <li>
-            <Link href='/blog'>
-              <a className='px-3 py-2 transition hover:bg-yellow-100 rounded-xl truncate max-w-md'>
-                Blog
-              </a>
-            </Link>
-          </li>
         </ul>
-        <a
-          className='px-3 py-1 font-semibold text-white border-0 rounded-xl bg-gradient-to-r from-yellow-400 to-orange-500'
-          href='#contacto'>
-          Contacto
-        </a>
       </div>
     </header>
   )

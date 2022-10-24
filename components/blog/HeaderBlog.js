@@ -17,7 +17,7 @@ export function HeaderBlog() {
   }
 
   return (
-    <header className='sticky top-0 z-20 transition-all duration-300 bg-white shadow-md shadow-yellow-400'>
+    <header className='sticky top-0 z-20 transition-all duration-300 bg-white shadow-md'>
       <div className='flex flex-row gap-4 px-6 py-4 lg:hidden'>
         <div className='mt-2'>
           <span tabIndex='0' className='cursor-pointer' onClick={toggle}>

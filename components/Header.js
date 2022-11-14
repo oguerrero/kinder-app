@@ -48,13 +48,6 @@ export function Header() {
                 </a>
               </li>
             ))}
-            <li>
-              <Link href='/blog'>
-                <a className='px-3 py-2 transition hover:bg-yellow-100 rounded-xl truncate max-w-md'>
-                  Blog
-                </a>
-              </Link>
-            </li>
           </ul>
         </div>
 
@@ -83,13 +76,6 @@ export function Header() {
               </a>
             </li>
           ))}
-          <li>
-            <Link href='/blog'>
-              <a className='px-3 py-2 transition hover:bg-yellow-100 rounded-xl truncate max-w-md'>
-                Blog
-              </a>
-            </Link>
-          </li>
         </ul>
         <a
           className='px-3 py-1 font-semibold text-white border-0 rounded-xl bg-gradient-to-r from-yellow-400 to-orange-500'
